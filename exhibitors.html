@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+ <div class="container-fluid" style="padding: 0px;overflow: hidden;">
+    <div class="row">
+      <div class="col-lg-12">
+        <img src="images/top.png" width="100%" alt="">
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid">
+    <!-- Logo (Mobile Only) -->
+    <a class="navbar-brand d-lg-none" href="index.html">
+      <img src="images/mainlogo.png" loading="lazy" alt="Logo" class="navbar-logo">
+    </a>
+
+    <!-- Hamburger (sidebar trigger) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse justify-content-center d-none d-lg-block">
+      <ul class="navbar-nav w-100 justify-content-center">
+        <!-- Left Menu -->
+        <li class="nav-item"><a class="nav-link"   href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+
+        <!-- Dropdown for OUR PARTNERS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle left-gap" href="#" id="partnersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            EXHIBITORS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="partnersDropdown">
+            <li><a class="dropdown-item" href="exhibitors.html">EXHIBITORS</a></li>
+            <li><a class="dropdown-item" href="images/floorplan.pdf">FLOOR PLAN</a></li>
+            <li><a class="dropdown-item" href="images/broucher.pdf">BROCHURE</a></li>
+          </ul>
+        </li>
+
+        <!-- Center Logo -->
+        
+
+        <!-- Right Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle left-gap" href="#" id="partnersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            VISITORS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="partnersDropdown">
+            <li><a class="dropdown-item" href="visitors.html">VISITORS</a></li>
+            <li><a class="dropdown-item" href="images/floorplan.pdf">FLOOR PLAN</a></li>
+            <li><a class="dropdown-item" href="images/broucher.pdf">BROCHURE</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+  <a class="nav-link right-gap" href="sponsorship.html">
+    SPONSORSHIP
+  </a>
+</li>
+
+
+          <a class="nav-link right-gap"  href="gallery.html">
+    GALLERY
+  </a>
+</li>
+        <li class="nav-item"><a class="nav-link"  href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<!-- Mobile Offcanvas Menu -->
+<!-- ✅ Mobile Offcanvas Menu -->
+<div class="offcanvas offcanvas-start offcanvas-custom" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">
+      <img src="images/mainlogo.png" loading="lazy" width="100px" alt="Logo">
+    </h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+
+      <!-- ✅ EXHIBITORS Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="mobileExhibitorsDropdown"
+           role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+          EXHIBITORS
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="mobileExhibitorsDropdown">
+          <li><a class="dropdown-item" href="exhibitors.html">EXHIBITORS</a></li>
+          <li><a class="dropdown-item" href="images/floorplan.pdf">FLOOR PLAN</a></li>
+          <li><a class="dropdown-item" href="images/broucher.pdf">BROCHURE</a></li>
+        </ul>
+      </li>
+
+      <!-- ✅ VISITORS Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="mobileVisitorsDropdown"
+           role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+          VISITORS
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="mobileVisitorsDropdown">
+          <li><a class="dropdown-item" href="visitors.html">VISITORS</a></li>
+          <li><a class="dropdown-item" href="images/floorplan.pdf">FLOOR PLAN</a></li>
+          <li><a class="dropdown-item" href="images/broucher.pdf">BROCHURE</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item"><a class="nav-link" href="sponsorship.html">SPONSORSHIP</a></li>
+      <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="container-fluid" style="padding: 0px;overflow: hidden;">
+  <div class="row">
+    <div class="col-lg-12">
+      <img src="images/exhiban.png" loading="lazy" width="100%" alt="">
+    </div>
+  </div>
+</div>
+
+<section class="expos-section container">
+      <div class="expos-card row g-0">
+
+        <!-- LEFT IMAGE -->
+        <div class="col-lg-6">
+          <img
+            src="images/exhiabtn.jpg"
+            class="expos-image"
+            alt="Garments Expo"
+          />
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="col-lg-6 d-flex align-items-center">
+          <div class="expos-content">
+
+            <span class="highlight-tag">Garments Machinery & Tec Expo 2026</span>
+
+            <h2 class="expos-title">
+              Showcasing the Future of Garments & Textile Technology
+            </h2>
+
+            <p class="expos-text">
+              Garments Machinery & Tec Expo 2026 provides an exceptional platform for
+              businesses to showcase the latest technologies, machinery, accessories, and
+              innovations in the garments and textile industry. The event attracts
+              manufacturers, suppliers, exporters, and buyers from across India and abroad —
+              creating the ideal environment to expand your brand reach and forge long-term
+              business relationships.
+            </p>
+
+            <a href="#" class="expos-btn">Explore More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<div class="container-fluid" style="background: url('images/bacexhi.avif');">
+<section class="container py-5">
+  <h2 style="text-align: center;margin-bottom: 2rem;font-weight: 700;font-size: 35px;">Exhibitors Profile</h2>
+  <div class="row g-4">
+
+    <!-- 1 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/eone.webp" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Accessories, Trims & Embellishments
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/etwo.jpg" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Garment Accessories
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/ethree.jpg" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Fasteners & Fastening Machines
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/efour.jpg" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Buttons, Belts & Buckles
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/efive.webp" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Zippers & Zipper-Making Machines
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/esix.jpg" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Threads – Sewing & Embroidery
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/eseven.webp" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Needles & Needle Detectors
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/eeight.avif" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Packaging & Labelling Solutions
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/enine.jpg" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          CAD/CAM & CIM Software Systems
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/eeleven.jpeg" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Software & Automation Technologies
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 11 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/etwelve.jpeg" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Cutting, Laying & Die-Cutting Machines
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 12 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/ethirteen.jpeg" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Laser Machines & Engraving Solutions
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 13 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/efourteen.jpg" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Knives/Scissors Grinding Machinery
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 14 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/efiveteen.jpg" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Sewing Machines & Control Systems
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 15 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/esixteen.jpeg" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Attaching, Interlocking & Seam-Sealing Machines
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 16 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/mise.jpg" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Fusing, Heat Transfer & Transfer-Printing
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 17 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/eseventeen.jpg" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Embroidery, Quilting & Multi-Needle Machines
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 18 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/eeighteen.jpeg" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Knitting, Hosiery & Intimate Apparel Machinery
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 19 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/enineteen.jpeg" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Fabric/Garment Inspection & Seaming Machines
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 20 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/elone.jpeg" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Denim Finishing & Garment Washing Technologies
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 21 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/eltwo.jpeg" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Dyeing, Digital Printing Machines & Inks
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 22 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/elthree.webp" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Screen Printing & Dye-Sublimation Systems
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 23 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/elfour.jpg" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Dyeing & Finishing Equipment
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 24 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/elfive.webp" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Dyes, Chemicals & Testing Agencies
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 25 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/elsix.avif" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Industrial Compressors, Boilers & Pumps
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 26 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/elseven.webp" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Ironing, Steaming, Laundry & Dry-Cleaning Equipment
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 27 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/eleight.avif" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Home Furnishing, Mattress-Making & Quilt-Filling Machines
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 28 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/elnine.jpg" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Pillow Filling, Mask-Making & Utility Machines
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 29 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/elten.avif" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Plotter Paper, Marker Paper & Warehousing Solutions
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 30 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/eleleven.jpg" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Mannequins, Display Racks & Labelling Systems
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 31 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/eltwelve.jpeg" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Quality Control & Certification Agencies
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 32 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="category-card">
+        <img src="images/elthirteen.webp" class="card-img" alt="">
+        <div class="overlay"><div class="overlay-box">
+          Leather & Footwear Manufacturing Technologies
+        </div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+</div>
+
+
+
+<footer class="footer mt-2" style="padding: 10px;">
+  <div class="container">
+    <div class="row gy-4">
+      
+      <!-- Logo and Caption -->
+      <div class="col-lg-4 col-md-6 footer-logo">
+        <img src="images/mainlogo.png" alt="Logo">
+        
+        <p>Crafting elegance with passion. We design garments that define your brand, from concept to creation — made with care in every stitch.</p>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="col-lg-4 col-md-6 footer-links">
+        <h5 style="color:#C8104C;font-weight: 700;">Quick Links</h5>
+         <ul class="mt-3">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="exhibitors.html">Exhibitors</a></li>
+          <li><a href="visitors.html">Visitors</a></li>
+          <li><a href="sponsorship.html">Sponsorship</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-4 col-md-12 footer-contact">
+        <h5 style="color:#C8104C;font-weight: 700;">Contact Us</h5>
+        <p class="mt-3"><i class="bi bi-geo-alt-fill"></i> #372/1, 3rd Floor, 8th Main Road,<br> Basaveshwaranagar, Bangalore, India - 560079</p>
+        <p><i class="bi bi-telephone-fill"></i> +91 7406213220</p>
+        <p><i class="bi bi-telephone-fill"></i> +91 7406213221</p>
+          <p><i class="bi bi-telephone-fill"></i> +91 7406213222</p>
+           <p><i class="bi bi-telephone-fill"></i> +91 7406213223</p>
+        <p><i class="bi bi-envelope-fill"></i> infogarmentstecexpo@gmail.com</p>
+        <p><i class="bi bi-envelope-fill"></i> garmentstecexpo@gmail.com</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom mt-4">
+      © 2025 <strong>Garments Machinery & Tec Expo 2026</strong>. All Rights Reserved | Designed by <a href="https://www.webads.live/" style="text-decoration: none;color: #C8104C;"> Webads</a>
+    </div>
+  </div>
+</footer>
+<button class="fire-scroll-top" id="fireScrollTop">
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
+  <div class="whatsapp-icon whatsapp-float">
+  <a 
+    href="https://wa.me/917406213220?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Build%20Tec%20Expo.%20Could%20you%20please%20provide%20more%20details%20about%20exhibitor%20registration%2C%20stall%20booking%2C%20and%20visitor%20passes%3F"
+    target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Build Tec Expo WhatsApp">
+  </a>
+</div>
+<a href="tel:+917406213220" class="phone-btn" title="Call Us">
+  <i class="bi bi-telephone-fill"></i>
+</a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+     window.addEventListener("load", () => {
+      const preloader = document.getElementById("firePreloader");
+      preloader.classList.add("fire-hidden");
+    });
+    const scrollBtn = document.getElementById("fireScrollTop");
+
+    window.addEventListener("scroll", () => {
+      scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+
+    scrollBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+
+</body>
+</html>
