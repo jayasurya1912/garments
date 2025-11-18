@@ -1066,7 +1066,7 @@
         }
 
         .stats-number {
-            font-size: 52px;
+            font-size: 42px;
             color: #fff;
             font-weight: 800;
         }
@@ -1218,6 +1218,7 @@
     display: flex;
     flex-direction: column;   /* Mobile stack */
     gap: 12px;
+    margin-left: -70px;
 }
 
 /* EACH ITEM */
@@ -1321,14 +1322,21 @@
         .benefit-line {
             border-right: 2px solid #c6b0d2;
         }
+        @media(max-width:920px)
+        {
+          .benefit-line
+          {
+            border-right: none;
+          }
+        }
 
-        @media(max-width: 992px) {
-            .benefit-line {
-                border-right: none;
-                border-bottom: 2px solid #c6b0d2;
-                margin-bottom: 20px;
-                padding-bottom: 20px;
-            }
+        
+        @media(max-width:920px)
+        {
+          .benefit-line
+          {
+            border-right: none;
+          }
         }
         .carousel-indicators [data-bs-target] {
   background-color: #a2dfb0; /* green indicator color */
