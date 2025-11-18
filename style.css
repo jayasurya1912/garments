@@ -1126,18 +1126,27 @@
         }
 
         /* Bottom Label */
-        .focus-label {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #FFCC00;
-            color: #000;
-            font-weight: 700;
-            padding: 12px 30px;
-            font-size: 17px;
-            border-radius: 40px;
-        }
+       .focus-label {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FFCC00;
+    color: #000;
+    font-weight: 700;
+    padding: 12px 30px;
+    font-size: 17px;
+    border-radius: 40px;
+
+    white-space: nowrap;      /* <— Forces single line */
+    min-width: max-content;   /* <— Prevents breaking */
+}
+@media (max-width: 480px) {
+    .focus-label {
+        font-size: 14px;
+        padding: 10px 22px;
+    }
+}
 
         /* TEXT PANEL */
         .focus-text {
