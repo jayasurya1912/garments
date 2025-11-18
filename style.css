@@ -320,11 +320,12 @@
       }
     }
 .footer {
-      background: url('images/footer.png');
+      background: url('images/footer.png')center center/cover no-repeat;
       color: black;
-      padding: 60px 0 20px;
+      padding: 60px 0 50px;
       position: relative;
       overflow: hidden;
+      
     }
 
     /* .footer::before {
