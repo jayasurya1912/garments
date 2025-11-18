@@ -892,7 +892,7 @@
     }
 
     .count-title {
-      font-size: 32px;
+      font-size: 40px;
       font-weight: 800;
       color: #FFD700;
       line-height: 1.3;
@@ -1688,3 +1688,421 @@
       from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
     }
+    .gmte-section {
+  background: url('images/abtnback.png') center center / cover no-repeat fixed;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 60px 0;
+}
+
+/* Dark overlay for readability */
+.gmte-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.gmte-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.image-box img {
+  border-radius: 15px;
+  width: 100%;
+  object-fit: cover;
+}
+/* Section Background */
+.purpose-section {
+  background: url('images/navback.png') center center/cover no-repeat;
+  position: relative;
+  color: black;
+}
+
+.purpose-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+ 
+}
+
+.purpose-section .container {
+  position: relative;
+  z-index: 3;
+}
+
+/* Title */
+.purpose-title {
+  font-size: 2.7rem;
+  font-weight: 700;
+  animation: fadeDown 1.2s ease forwards;
+}
+
+.purpose-subtitle {
+  max-width: 850px;
+  margin: auto;
+  opacity: 0.9;
+}
+
+/* Purpose Box */
+.purpose-box {
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  transition: 0.3s;
+  animation-duration: 1.3s;
+  border: 3px solid #C8104C;
+}
+
+.purpose-box:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-7px);
+}
+
+/* Icons */
+.icon-circle {
+  width: 70px; height: 70px;
+  background: #C8104C;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+/* Animation Keyframes */
+@keyframes fadeDown {
+  0% { opacity: 0; transform: translateY(-20px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes slideUp {
+  0% {opacity: 0; transform: translateY(40px);}
+  100% {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes slideLeft {
+  0% {opacity: 0; transform: translateX(-40px);}
+  100% {opacity: 1; transform: translateX(0);}
+}
+
+@keyframes slideRight {
+  0% {opacity: 0; transform: translateX(40px);}
+  100% {opacity: 1; transform: translateX(0);}
+}
+
+/* Applying Animations */
+.animate-fade { animation: fade 1.2s ease; }
+.animate-up { animation: slideUp 1.3s ease; }
+.animate-left { animation: slideLeft 1.3s ease; }
+.animate-right { animation: slideRight 1.3s ease; }
+/* Section background */
+.faq-section {
+  background: #f9f9f9;
+}
+
+.faq-title {
+  font-size: 2.5rem;
+  color: #C8104C;
+}
+
+.faq-subtitle {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #444;
+}
+
+/* Accordion Item */
+.faq-item {
+  border: none;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Button Style */
+.accordion-button {
+  background: #fff;
+  color: #000;
+  padding: 18px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  position: relative;
+}
+
+/* Remove default arrow */
+.accordion-button::after {
+  display: none;
+}
+
+/* Custom + icon */
+.accordion-button.collapsed::before {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 25px;
+  color: #C8104C;
+  font-weight: bold;
+}
+
+/* Custom - icon */
+.accordion-button:not(.collapsed)::before {
+  content: "–";
+  position: absolute;
+  right: 22px;
+  font-size: 28px;
+  color: #C8104C;
+  font-weight: bold;
+}
+
+/* Body */
+.accordion-body {
+  padding: 15px 25px 20px;
+  animation: fadeIn 0.35s ease-in-out;
+}
+
+/* Animation for body */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(5px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+.form-section {
+    
+      background: linear-gradient(90deg, #C8104C, #C8104C);
+
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 60px;
+  }
+  .form-title {
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .btn-primary {
+    background-color:#7B5FFF;
+    border-color: #7B5FFF;
+    margin-top: 2rem;
+    padding: 10px;
+  }
+  .btn-primary:hover {
+    background-color: #5f1fa2;
+  }
+  .sub-head
+  {
+    font-size: 29px;
+  }
+   .form-container {
+    background: linear-gradient(90deg, #C8104C, #C8104C);
+    padding: 80px;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    
+  }
+  .form-titles {
+    color: #7B5FFF;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .expo-contact-area {
+      padding: 80px 0;
+      text-align: center;
+      background: linear-gradient(180deg, #f6fff8 0%, #ffffff 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .expo-contact-area::before {
+      content: '';
+      position: absolute;
+      top: -80px;
+      left: -80px;
+      width: 250px;
+      height: 250px;
+      background: rgba(40, 167, 69, 0.1);
+      border-radius: 50%;
+      animation: expo-float-bubble 6s ease-in-out infinite alternate;
+    }
+
+    /* ---------- TITLE ---------- */
+    .expo-contact-heading {
+      color: #8b4513;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .expo-contact-title {
+      font-weight: 700;
+      color: #1e1e1e;
+      margin-bottom: 50px;
+    }
+
+    /* ---------- CONTACT CARDS ---------- */
+    .expo-contact-card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      padding: 40px 20px;
+      transition: all 0.4s ease;
+      height: 100%;
+      position: relative;
+      z-index: 2;
+      animation: expo-fade-in 1s ease forwards;
+    }
+
+    .expo-contact-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(40, 167, 69, 0.25);
+    }
+
+    .expo-contact-icon {
+      font-size: 42px;
+      color: #28a745;
+      margin-bottom: 18px;
+      animation: expo-bounce 2.5s infinite;
+    }
+
+    .expo-contact-card h5 {
+      font-weight: 600;
+      color: #1e1e1e;
+      margin-bottom: 15px;
+    }
+
+    .expo-contact-card p {
+      font-size: 15px;
+      color: #333;
+      margin: 0;
+      line-height: 1.7;
+    }
+
+    /* Fullscreen preloader */
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: #fff7e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  overflow: hidden;
+}
+
+/* Loader wrapper */
+.shirt-loader {
+  position: relative;
+  text-align: center;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+/* Cartoon T-shirt (drawn with CSS only!) */
+.tshirt {
+  width: 110px;
+  height: 90px;
+  background: #C8104C;
+  position: relative;
+  border-radius: 10px;
+  margin: 0 auto;
+  animation: spinShirt 2s infinite linear;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* T-shirt sleeves */
+.tshirt::before, 
+.tshirt::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  width: 35px;
+  height: 40px;
+  background: #C8104C;
+  border-radius: 8px;
+}
+
+.tshirt::before {
+  left: -28px;
+  transform: rotate(-20deg);
+}
+
+.tshirt::after {
+  right: -28px;
+  transform: rotate(20deg);
+}
+
+/* Floating fabric pieces */
+.fabric {
+  width: 25px;
+  height: 25px;
+  background: #FFD700;
+  position: absolute;
+  border-radius: 4px;
+  opacity: 0.8;
+  animation: floatFabric 3s infinite ease-in-out;
+}
+
+.fabric1 { left: -60px; top: 20px; animation-delay: 0s; }
+.fabric2 { right: -60px; top: 10px; animation-delay: 0.4s; }
+.fabric3 { left: -20px; bottom: -40px; animation-delay: 0.8s; }
+
+/* Loader text */
+.load-text {
+  margin-top: 18px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #C8104C;
+  animation: textBounce 1.4s infinite ease-in-out;
+}
+
+/* Animations */
+@keyframes spinShirt {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.05); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+@keyframes floatFabric {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-25px) rotate(25deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+@keyframes textBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.fade-out {
+  animation: vanish 0.8s forwards ease;
+}
+
+@keyframes vanish {
+  from { opacity: 1; }
+  to { opacity: 0; transform: scale(1.1); visibility: hidden; }
+}
