@@ -116,6 +116,27 @@
       }
     }
 
+
+
+    .conse {
+      font-size: 18px;
+      color: white;
+      
+    }
+
+    @media (max-width:1400px) {
+      .conse {
+        font-size: 14px;
+        margin-top: 2.5rem;
+      }
+    }
+
+    @media (max-width:1200px) {
+      .conse {
+        font-size: 12px;
+      }
+    }
+
     /* Main card wrapper */
     .contact-card {
       position: relative;
@@ -1567,10 +1588,10 @@
 
 @media (max-width: 480px) {
   .phone-btn {
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
     font-size: 20px;
-    bottom: 250px;
+    bottom: 170px;
     right: 15px;
   }
 }
